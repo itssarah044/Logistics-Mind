@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Logistics Mind</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-truck-fast brand-icon"></i>
+      <span class="brand-text">Logistics Mind</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="system.html" class="nav-link">System</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      <li><a href="history.html" class="nav-link">History</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-hero reveal">
+      <span class="section-tag">Get in Touch</span>
+      <h1 class="section-title">Contact Us</h1>
+      <p class="section-sub">Have questions or feedback about the system? Fill out the form below.</p>
+    </div>
+
+    <section class="contact-section">
+      <div class="contact-form-wrap reveal-up">
+        <form id="contactForm" class="decision-form" novalidate>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" placeholder="Ahmed" minlength="2" maxlength="50" pattern="[A-Za-z\s]+" required />
+              <span class="field-error" id="errFirstName"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" placeholder="Al-Qahtani" minlength="2" maxlength="50" pattern="[A-Za-z\s]+" required />
+              <span class="field-error" id="errLastName"></span>
+            </div>
+
+            <div class="form-group">
+              <label>Gender <span class="required">*</span></label>
+              <div class="radio-group" id="genderGroup">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" required /> Male
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female" /> Female
+                </label>
+              </div>
+              <span class="field-error" id="errGender"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile Number <span class="required">*</span></label>
+              <input type="tel" id="mobile" name="mobile" placeholder="0512345678" pattern="[0-9]{9,10}" required />
+              <span class="field-error" id="errMobile"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="dob">Date of Birth <span class="required">*</span></label>
+              <input type="date" id="dob" name="dob" required />
+              <span class="field-error" id="errDob"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="field-error" id="errEmail"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="language">Preferred Language <span class="required">*</span></label>
+              <select id="language" name="language" required>
+                <option value="">-- Select Language --</option>
+                <option value="arabic">Arabic</option>
+                <option value="english">English</option>
+                <option value="french">French</option>
+              </select>
+              <span class="field-error" id="errLanguage"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="reasonForContact">Reason for Contact <span class="required">*</span></label>
+              <select id="reasonForContact" name="reasonForContact" required>
+                <option value="">-- Select Reason --</option>
+                <option value="tech-support">Tech Support</option>
+                <option value="logistics-consultation">Logistics Consultation</option>
+                <option value="feedback">Feedback</option>
+              </select>
+              <span class="field-error" id="errReasonForContact"></span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Type your message here..." minlength="10" maxlength="1000" required></textarea>
+              <span class="field-error" id="errMessage"></span>
+              <span class="char-count" id="charCount">0 / 1000</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary form-submit" id="contactSubmitBtn">
+            <span id="contactSubmitText">Send Message</span>
+            <span id="contactLoader" class="btn-loader hidden">Sending…</span>
+          </button>
+        </form>
+
+        <div class="success-message hidden" id="successMessage">
+          <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. We'll get back to you soon.</p>
+          <button class="btn-ghost" id="sendAnotherBtn">Send Another Message</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <i class="fa-solid fa-truck-fast brand-icon"></i>
+        <span>Logistics Mind</span>
+      </div>
+      <p class="footer-copy">2026 — Smarter routes. Better decisions.</p>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

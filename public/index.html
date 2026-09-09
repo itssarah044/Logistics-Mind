@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logistics Mind</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-truck-fast brand-icon"></i>
+      <span class="brand-text">Logistics Mind</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="system.html" class="nav-link">System</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="history.html" class="nav-link">History</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+<header>
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <video id="heroBg" autoplay muted loop playsinline>
+        <source src="media/hero-bg.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label reveal">LOGISTICS INTELLIGENCE</p>
+      <h1 class="hero-title reveal">
+        Logistics<br />
+        <span class="accent-text">Mind</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Optimize your shipping routes and methods using real-time data analysis and intelligent decision logic.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="system.html" class="btn-primary">Launch System</a>
+        <a href="#features" class="btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span><i class="fa-solid fa-angles-down fa-3x"></i></span>
+      <div class="scroll-line"></div>
+    </div>
+    
+  </section>
+</header>
+  <section class="stats-bar" id="statsBar">
+    <div class="stats-wrap">
+      <div class="stat-item reveal-up">
+        <span class="stat-num" data-count="98">0</span><span class="stat-unit">%</span>
+        <p class="stat-label">Decision Accuracy</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up">
+        <span class="stat-num" data-count="3">0</span>
+        <p class="stat-label">Shipping Methods</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up">
+        <span class="stat-num" data-count="2">0</span>
+        <p class="stat-label">Route Options</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal-up">
+        <span class="stat-num" data-count="100">0</span><span class="stat-unit">%</span>
+        <p class="stat-label">Web-Based Access</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Core Capabilities</span>
+      <h2 class="section-title">Built for Logistics Teams</h2>
+      <p class="section-sub">Make confident decisions with a system that understands your shipment requirements.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal-up">
+        <div class="feature-icon plane-icon"><i class="fa-solid fa-plane"></i></div>
+        <h3>Shipping Method Analysis</h3>
+        <p>Automatically selects Air, Sea, or Land shipping based on weight, urgency, and destination with full reasoning.</p>
+      </div>
+      <div class="feature-card reveal-up">
+        <div class="feature-icon map-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <h3>Route Optimization</h3>
+        <p>Fetches real route data via OpenRouteService API and recommends the best path based on time, cost, and risk.</p>
+      </div>
+      <div class="feature-card reveal-up">
+        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Decision Engine</h3>
+        <p>The system evaluates shipment conditions such as urgency, weight, and destination to determine the most efficient shipping method.</p>
+      </div>
+      <div class="feature-card reveal-up">
+        <div class="feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <h3>Risk Awareness</h3>
+        <p>Each route is assessed for potential delays and traffic conditions, helping logistics teams avoid costly disruptions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Workflow</span>
+      <h2 class="section-title">How It Works</h2>
+    </div>
+    <div class="steps-row">
+      <div class="step reveal-up">
+        <div class="step-num">01</div>
+        <h4>Enter Shipment Info</h4>
+        <p>Fill in origin, destination, weight, type, and budget through our guided form.</p>
+      </div>
+      <div class="step-arrow reveal-up">→</div>
+      <div class="step reveal-up">
+        <div class="step-num">02</div>
+        <h4>Route Options Are Generated</h4>
+        <p>The system prepares multiple route options based on your shipment details, including estimated time and delivery conditions.</p>
+      </div>
+      <div class="step-arrow reveal-up">→</div>
+      <div class="step reveal-up">
+        <div class="step-num">03</div>
+        <h4>The Best Option Is Selected</h4>
+        <p>The system analyzes your shipment details and chooses the most suitable shipping method and route.</p>
+      </div>
+      <div class="step-arrow reveal-up">→</div>
+      <div class="step reveal-up">
+        <div class="step-num">04</div>
+        <h4>View Results</h4>
+        <p>A clear summary displays the recommendation, estimated time, cost, and risk level.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section reveal-up">
+    <div class="cta-box">
+      <h2>Ready to optimize your logistics?</h2>
+      <p>Use the system now to get an instant shipping and route recommendation.</p>
+      <a href="system.html" class="btn-primary">Open Decision System</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon logo-icon"><i class="fa-solid fa-truck-fast"></i></span>
+        <span>Logistics Mind</span>
+      </div>
+      <p class="footer-copy">2026 — Smarter routes. Better decisions.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

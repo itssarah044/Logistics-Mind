@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History — Logistics Mind</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-truck-fast brand-icon"></i>
+      <span class="brand-text">Logistics Mind</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="system.html" class="nav-link">System</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="history.html" class="nav-link active">History</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page-main">
+    <div class="page-hero reveal">
+      <span class="section-tag">Records</span>
+      <h1 class="section-title">Shipment History</h1>
+      <p class="section-sub">All saved shipment decisions are listed below.</p>
+    </div>
+
+    <section class="history-section">
+      <div class="history-status" id="historyStatus">Loading records…</div>
+      <div class="table-wrapper reveal-up" id="historyTableWrap">
+        <table class="team-table history-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Type</th>
+              <th>Weight (kg)</th>
+              <th>Origin</th>
+              <th>Destination</th>
+              <th>Delivery Date</th>
+              <th>Budget (SAR)</th>
+              <th>Method</th>
+              <th>Selected Route</th>
+              <th>Distance (km)</th>
+              <th>Duration (hrs)</th>
+              <th>Cost</th>
+              <th>Traffic</th>
+              <th>Risk</th>
+              <th>Saved At</th>
+            </tr>
+          </thead>
+          <tbody id="historyTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon logo-icon"><i class="fa-solid fa-truck-fast"></i></span>
+        <span>Logistics Mind</span>
+      </div>
+      <p class="footer-copy">2026 — Smarter routes. Better decisions.</p>
+    </div>
+  </footer>
+
+  <script src="js/history.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
